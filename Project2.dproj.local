@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2019.10.04 09:24:15.733,=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2019.10.04 09:24:32.744,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2019.10.04 09:24:32.744,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit4.dfm</Transaction>
+    <Transaction>2019.10.04 09:24:43.811,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2019.10.04 09:24:43.811,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019.10.04 09:24:43.833,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019.10.04 09:24:43.833,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2019.10.04 09:24:51.208,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019.10.04 09:24:51.208,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2019.10.04 09:24:51.232,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019.10.04 09:24:51.232,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2019.10.04 09:24:59.573,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2019.10.04 09:24:59.573,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019.10.04 09:24:59.594,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2019.10.04 09:24:59.594,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019.10.04 09:25:13.257,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit0.dfm=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2019.10.04 09:25:13.257,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit0.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019.10.04 09:25:25.810,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\UnitForm.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit0.pas</Transaction>
+    <Transaction>2019.10.04 09:25:25.810,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\UnitForm.dfm=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit0.dfm</Transaction>
+    <Transaction>2019.10.04 09:25:46.655,=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019.10.04 09:25:58.388,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\ThreadKullanimi\Unit2.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2019.10.04 09:26:05.033,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\ThreadKullanimi\UnitForm.dfm=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\UnitForm.dfm</Transaction>
+    <Transaction>2019.10.04 09:26:05.033,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\ThreadKullanimi\UnitForm.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\UnitForm.pas</Transaction>
+    <Transaction>2019.10.04 09:26:07.472,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\ThreadKullanimi\Project2.dproj=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2019.10.04 09:29:30.923,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\ThreadKullanimi\Unit1.dfm=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\ThreadKullanimi\UnitForm.dfm</Transaction>
+    <Transaction>2019.10.04 09:29:30.923,C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\ThreadKullanimi\Unit1.pas=C:\Users\cihat.pala\Documents\Embarcadero\Studio\Projects\ThreadKullanimi\UnitForm.pas</Transaction>
+  </Transactions>
+</BorlandProject>

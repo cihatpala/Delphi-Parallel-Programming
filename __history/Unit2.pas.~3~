@@ -1,0 +1,74 @@
+unit Unit2;
+
+interface
+
+uses
+  System.Classes;
+
+type
+  MyThread = class(TThread)
+  private
+    say : integer;
+    procedure Ilerlet;
+    { Private declarations }
+  protected
+    procedure Execute; override;
+  public
+    // ** constructor Create(bittiolayi : TNotifyEvent);
+    constructor Create;
+    destructor Destroy; override;
+  end;
+
+implementation
+uses Unit1;
+
+constructor MyThread.Create; // Threadý oluþturuluyor
+begin
+  inherited Create(True);
+  // True = Thread otomatik baþlamasýn, Resume Metodunu Beklesin
+  // False = Thread otomatik baþlasýn
+  FreeOnTerminate := True;
+  // Thread Terminate Edildiðinde Class Free Olsun
+end;
+
+
+procedure MyThread.Execute; // Threadýn sürekli çalýþan kodu
+begin
+  say := 0;
+  While ((say < 10000) and not(Terminated)) do begin
+   // Sürekli iþin bitip bitmediði veya
+   // Threadýn sonlanýp sonlandýrýlmadýðý
+   // Kontrol ediliyor
+   Inc(say);
+   Synchronize(Ilerlet);
+   // Ana formdaki bileþenlere ulaþmak
+   // için Synchronize kullanýlýr
+   // Parametre verilen fonksiyon çaðrýlýr
+   Sleep(50);
+  end;
+end;
+
+destructor MyThread.Destroy; // Thread sonlandýrýlýyor
+begin
+ Inherited;
+end;
+
+procedure MyThread.Ilerlet; // Synchronize fonksiyonu
+begin
+ Form1.ProgressBar1.position := say;
+ // Formlardaki bileþenlere ulaþýrken
+ // Synchronize ile bu fonksiyon çaðrýlmaktadýr
+ // Bu fonksiyon çalýþýrken thread iþini
+ // býrakýp kontrolü Ana threada býrakmaktadýr
+ // Bu sebepten buradaki iþlemler
+ // az olmalýdýr
+
+ // Synchronize yerine PostMessage veya
+ // SendMessage Apileri ile Ana forma
+ // mesaj gönderilebilir.
+ // Böylece kontrolün Ana thread'a
+ // býrakýlmasý gerekmez
+end;
+
+
+end.

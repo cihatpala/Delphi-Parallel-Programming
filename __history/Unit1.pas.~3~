@@ -1,0 +1,91 @@
+unit Unit1;
+
+interface
+
+uses  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+Dialogs, StdCtrls, ComCtrls, XPMan, Buttons, Unit2;
+
+type
+  TThreadDurum = (tdYok, tdCalisiyor, tdDurdu);
+
+  TForm1 = class(TForm)
+    ProgressBar1: TProgressBar;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    BitBtn3: TBitBtn;
+    BitBtn4: TBitBtn;
+    XPManifest1: TXPManifest;
+    procedure BitBtn1Click(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn3Click(Sender: TObject);
+    procedure BitBtn4Click(Sender: TObject);
+  private
+    { Private declarations }
+    procedure threadbitti(sender: Tobject);
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1 : TForm1;
+  Yenithread : Threadim;
+  Threaddurum : TThreadDurum = tdYok;
+
+implementation
+{$R *.dfm}
+
+procedure TForm1.BitBtn1Click(Sender: TObject); // Thread Baþlat
+begin
+  if Threaddurum <> tdYok then Exit;
+
+  // ** Yenithread := Threadim.Create(threadbitti);
+  Yenithread := Threadim.Create;
+  // Thread oluþturuluyor
+
+  Yenithread.Priority := tpLowest;
+  // Thread önceliði
+  // tpIdle = Çok düþük
+  // tpLowest = Düþük
+  // tpNormal = Normal (Varsayýlan deðer)
+  // tpHighest = Yüksek
+  // tpTimeCritical = Kritik yüksek
+
+  Yenithread.OnTerminate := threadbitti;
+  // Thread bittiðinde çaðrýlacak fonksiyon
+
+  Yenithread.Resume; // Thread baþlatýlýyor
+  // Delphi XE sürümünden sonra
+  // Thread baþlatýlýrken Resume
+  // yerine Start komutu kulanýlmaktadýr
+  // Yenithread.Start;
+
+  Threaddurum := tdCalisiyor;
+end;
+
+procedure TForm1.threadbitti(sender: Tobject); // Thread Bitti olayý
+begin
+ showmessage('Thread bitti!');
+ Threaddurum := tdYok;
+end;
+
+procedure TForm1.BitBtn2Click(Sender: TObject); // Thread Ara ver
+begin
+ if Threaddurum <> tdCalisiyor then Exit;
+ Yenithread.Suspend;
+ Threaddurum := tdDurdu;
+end;
+
+procedure TForm1.BitBtn3Click(Sender: TObject); // Thread Devam et
+begin
+ if Threaddurum <> tdDurdu then Exit;
+ Yenithread.Resume;
+ Threaddurum := tdCalisiyor;
+end;
+
+procedure TForm1.BitBtn4Click(Sender: TObject);  // Thread Durdur
+begin
+  if Threaddurum <> tdCalisiyor then Exit;
+  Yenithread.Terminate;
+end;
+
+end.
